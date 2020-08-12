@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "675188306708",
+    "firebase_url": "https://kheutab.firebaseio.com",
+    "project_id": "kheutab",
+    "storage_bucket": "kheutab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675188306708:android:c85df9779c039d4c180801",
+        "android_client_info": {
+          "package_name": "com.example.kheutab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675188306708-m77mouamo16o0ejp3inoe8vmq3ijup3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhwUlzOXTpKQ2oQ2v2kOR7qF_AbnzurYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675188306708-m77mouamo16o0ejp3inoe8vmq3ijup3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675188306708:android:75da0e4542c86a46180801",
+        "android_client_info": {
+          "package_name": "com.kalu.otab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675188306708-m77mouamo16o0ejp3inoe8vmq3ijup3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhwUlzOXTpKQ2oQ2v2kOR7qF_AbnzurYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675188306708-m77mouamo16o0ejp3inoe8vmq3ijup3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

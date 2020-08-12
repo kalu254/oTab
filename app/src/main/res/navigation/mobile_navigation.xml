@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/my_timetable">
+
+    <fragment
+        android:id="@+id/my_timetable"
+        android:name="com.kalu.otab.ui.MyLessons.MyLessons"
+        android:label="@string/my_lessons"
+        tools:layout="@layout/activity_units" />
+
+    <fragment
+        android:id="@+id/choose_department"
+        android:name="com.kalu.otab.ui.SelectMyLessons.DepartmentBelonged"
+        android:label="@string/choose_department"
+        tools:layout="@layout/activity_student_departments" />
+
+    <fragment
+        android:id="@+id/admin"
+        android:name="com.kalu.otab.ui.Admin.SelectDepartment"
+        android:label="@string/admin"
+        tools:layout="@layout/activity_departments" />
+</navigation>

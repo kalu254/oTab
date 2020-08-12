@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">oTab</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="empty_not_saved">Lesson not set</string>
+    <string name="my_lessons">My Lessons</string>
+    <string name="choose_department">Choose Department</string>
+    <string name="title">KHU Online Timetable</string>
+    <string name="admin">Admin</string>
+    <string name="reg_no">Email:</string>
+    <string name="lec_code">Lec_Code:</string>
+    <string name="Password">Password:</string>
+    <string name="c_password">Confirm password:</string>
+    <string name="login">Click to login</string>
+    <string name="resend_link">Resend link</string>
+    <string name="error_message_reg_no">Enter Valid Registration Number</string>
+    <string name="error_valid_reg_no">Incorrect Password or Registration Number.Try Again.</string>
+    <string name="hint_name">Name:</string>
+    <string name="hint_regno">Reg No or Lec Code:</string>
+    <string name="hint_lec_code">Lec Code:</string>
+    <string name="hint_email">Email:</string>
+    <string name="hint_password">Password:</string>
+    <string name="hint_confirm_password">Confirm Password:</string>
+    <string name="hint_account_statement">Only Students and Lecturers From Kheu Should Create Accounts</string>
+    <string name="hint_addlessons_to_db">Add lesons,lecture rooms and course lecturers</string>
+    <string name="text_register">Register</string>
+    <string name="error_message_name">Enter Full Name</string>
+    <string name="error_message_Regno">Enter Valid Registration Number</string>
+    <string name="error_message_LecCode">Enter Valid Lecturer Code</string>
+    <string name="error_message_email">Enter Valid Email</string>
+    <string name="error_message_age">Enter Age</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Registration Successful</string>
+    <string name="text_not_member">No account yet? Create one</string>
+    <string name="text_already_member">Already a member? Login</string>
+    <string name="error_email_exists">Email Already Exists</string>
+    <string name="error_password_match">Password Does Not Matche</string>
+    <string name="error_valid_email_password">Wrong Email or Password</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_hello">Hello,</string>
+    <string name="text_title">Android Tutorials Hub</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_account">Don\'t have an account yet? Create one</string>
+    <string name="title_activity_courses">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="cs_department">Computer Science</string>
+    <string name="it_department">IT</string>
+    <string name="ed_department">Education</string>
+    <string name="lib_sci_department">Library Science</string>
+    <string name="psych_department">Psychology</string>
+    <string name="theology_department">Theology</string>
+    <string name="register">Create Account</string>
+    <string name="student_name">student name</string>
+
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="name">Your Name</string>
+    <string name="your_department">Your Department</string>
+    <string name="your_email">Your Email</string>
+    <string name="user_name">student name</string>
+    <string name="student_email">student department</string>
+    <string name="title_activity_settings">"Settings "</string>
+    <string name="resend_verification_email">Resend Verification</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Cancel</string>
+
+</resources>

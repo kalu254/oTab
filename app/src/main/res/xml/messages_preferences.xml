@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditTextPreference
+        app:key="name"
+        app:summary="true"
+        app:title="@string/name"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        android:defaultValue="false"
+        app:key="department"
+        app:title="@string/your_department"
+        app:useSimpleSummaryProvider="true" />
+
+
+    <EditTextPreference
+        android:defaultValue="true"
+        app:key="email"
+        app:title="@string/your_email"
+        app:useSimpleSummaryProvider="true" />
+
+</PreferenceScreen>

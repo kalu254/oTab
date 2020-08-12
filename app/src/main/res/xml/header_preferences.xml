@@ -1,0 +1,15 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        app:fragment="com.kalu.otab.SettingsActivity$MessagesFragment"
+        app:icon="@drawable/ic_baseline_account_circle_24"
+        app:key="account_header"
+        app:title="User details" />
+
+    <Preference
+        app:fragment="com.kalu.otab.SettingsActivity$SyncFragment"
+        app:icon="@drawable/ic_notifications_black_24dp"
+        app:key="notification_header"
+        app:title="Allow notifications" />
+
+</PreferenceScreen>
