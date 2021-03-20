@@ -2,10 +2,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <EditTextPreference
+        android:defaultValue="false"
         app:key="name"
         app:summary="true"
         app:title="@string/name"
-        app:useSimpleSummaryProvider="true" />
+        app:useSimpleSummaryProvider="false" />
 
     <EditTextPreference
         android:defaultValue="false"
@@ -15,7 +16,7 @@
 
 
     <EditTextPreference
-        android:defaultValue="true"
+        android:defaultValue="false"
         app:key="email"
         app:title="@string/your_email"
         app:useSimpleSummaryProvider="true" />

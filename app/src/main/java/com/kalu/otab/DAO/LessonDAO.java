@@ -1,10 +1,12 @@
-package com.kalu.otab.DataManagement;
+package com.kalu.otab.DAO;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
+
+import com.kalu.otab.model.Lesson;
 
 import java.util.List;
 

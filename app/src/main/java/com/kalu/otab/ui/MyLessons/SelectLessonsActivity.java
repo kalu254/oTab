@@ -13,11 +13,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.kalu.otab.DataManagement.Lesson;
-import com.kalu.otab.DataManagement.LessonRoomDatabase;
-import com.kalu.otab.DataManagement.Unit;
+import com.kalu.otab.model.Lesson;
+import com.kalu.otab.Database.LessonRoomDatabase;
+import com.kalu.otab.model.Unit;
 import com.kalu.otab.MainActivity;
 import com.kalu.otab.R;
+import com.kalu.otab.ui.viewmodel.MyLessonsViewModel;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -26,14 +27,12 @@ import java.util.Map;
 
 public class SelectLessonsActivity extends AppCompatActivity {
 
-    private MyLessonsViewModel mMyLessonsViewModel;
 
     private List<String> names = new ArrayList<>();
     private List<Unit> unitDetails = new ArrayList<>();
 
     private Lesson l;
     private List<Lesson> mLessons = new ArrayList<>();
-    private MyLessonsViewModel mPersistMyLessons;
     private Lesson mLesson;
 
     public static String mDepartment;

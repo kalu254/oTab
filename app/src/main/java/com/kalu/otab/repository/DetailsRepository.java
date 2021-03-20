@@ -1,32 +1,40 @@
-package com.kalu.otab.DataManagement;
+package com.kalu.otab.repository;
 
 import android.app.Application;
 import android.os.AsyncTask;
 
 import androidx.lifecycle.LiveData;
 
+import com.kalu.otab.DAO.LessonDAO;
+import com.kalu.otab.Database.LessonRoomDatabase;
+import com.kalu.otab.model.Lesson;
+
 import java.util.List;
 
-public class LessonRepository {
+public class DetailsRepository {
 
     private LessonDAO mLessonDAO;
     private LiveData<List<Lesson>> mAllLessons;
 
-    public LessonRepository(Application application) {
+    public DetailsRepository(Application application) {
         LessonRoomDatabase db = LessonRoomDatabase.getDatabase(application);
         mLessonDAO = db.lessonDAO();
+
         mAllLessons = mLessonDAO.getAllLessons();
+
+
     }
 
     public LiveData<List<Lesson>> getAllLessons() {
         return mAllLessons;
     }
 
-    public void insert (Lesson lesson){
+
+    public void insertLesson(Lesson lesson){
         new insertAsyncTask(mLessonDAO).execute(lesson);
     }
 
-    public void deleteAll(){
+    public void deleteAllLessons(){
         new DeleteAllAsyncTask(mLessonDAO).execute();
     }
 
@@ -49,8 +57,8 @@ public class LessonRepository {
             mAsyncTaskDao.insertLesson(params[0]);
             return null;
         }
-    }
 
+    }
     private class DeleteAllAsyncTask extends AsyncTask<Void,Void,Void>{
 
         private LessonDAO mLessonDAO;
@@ -79,4 +87,5 @@ public class LessonRepository {
             return null;
         }
     }
+
 }

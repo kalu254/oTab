@@ -37,13 +37,13 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_login);
 
         mLoginEmail = findViewById(R.id.login_email);
         mLoginPassword = findViewById(R.id.login_password);
 
         setUpFirebaseAuth();
-
 
 
          linkregister = (TextView) findViewById(R.id.create_account);

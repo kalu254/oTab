@@ -1,4 +1,4 @@
-package com.kalu.otab.DataManagement;
+package com.kalu.otab.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -66,6 +66,8 @@ public class Lesson implements Parcelable {
             return new Lesson[size];
         }
     };
+
+
 
     public Lesson(Parcelable parcelableExtra) {
 

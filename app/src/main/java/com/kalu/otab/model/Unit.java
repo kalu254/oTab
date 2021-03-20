@@ -1,4 +1,4 @@
-package com.kalu.otab.DataManagement;
+package com.kalu.otab.model;
 
 import androidx.room.Entity;
 

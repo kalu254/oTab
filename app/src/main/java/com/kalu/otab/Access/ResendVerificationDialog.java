@@ -27,7 +27,7 @@ import com.kalu.otab.R;
 
 public class ResendVerificationDialog extends DialogFragment {
 
-    private static final String TAG = "ResendVerificationDialo";
+    private static final String TAG = "ResendVerificationDialog";
 
     //widgets
     private EditText mConfirmPassword, mConfirmEmail;

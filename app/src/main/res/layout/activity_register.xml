@@ -1,142 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:fillViewport="true">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:id="@+id/nestedScrollView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorBackground"
-    android:orientation="vertical"
-    android:paddingLeft="20dp"
-    android:paddingTop="20dp"
-    android:paddingRight="20dp"
-    android:paddingBottom="20dp"
-    tools:context="com.example.kheutab.Access.LoginActivity"
-    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/side_nav_bar">
 
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_register"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:background="@color/colorPrimaryDark"
-        android:text="@string/register"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.825"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_confirm_password" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/heading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/title"
-        android:textColor="@android:color/holo_green_dark"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.178"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/side_nav_bar">
 
-    <TextView
-        android:id="@+id/txt_student_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Education for Transformation"
-        android:textColor="@android:color/black"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="@+id/heading"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/heading"
-        app:layout_constraintTop_toBottomOf="@+id/heading" />
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@drawable/register_bg"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/input_email"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:hint="@string/reg_no"
-        android:inputType="text"
-        android:maxLines="1"
-        android:textColor="@android:color/holo_green_dark"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.119"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/input_password"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:hint="@string/Password"
-        android:inputType="textPassword"
-        android:maxLines="1"
-        android:textColor="@android:color/holo_green_dark"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_email" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/input_confirm_password"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:hint="@string/c_password"
-        android:inputType="textPassword"
-        android:maxLines="1"
-        android:textColor="@android:color/holo_green_dark"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.825"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_password" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/appCompatImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/envision"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_student_email" />
-
-    <TextView
-        android:id="@+id/resend_link"
-        android:layout_width="78dp"
-        android:layout_height="13dp"
-        android:text="@string/resend_link"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
-        app:layout_constraintEnd_toEndOf="@+id/progressBar"
-        app:layout_constraintStart_toStartOf="@+id/progressBar"
-        app:layout_constraintTop_toTopOf="@+id/progressBar" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/btn_register"
-        app:layout_constraintStart_toStartOf="@+id/btn_register"
-        app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/nestedScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:context="com.example.kheutab.Access.LoginActivity">
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/input_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Name:"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_register"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:text="@string/register"
+                            app:layout_constraintEnd_toEndOf="@+id/input_confirm_password"
+                            app:layout_constraintStart_toStartOf="@+id/input_confirm_password"
+                            app:layout_constraintTop_toBottomOf="@+id/input_confirm_password" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/input_reg_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:hint="Reg No:"
+                            android:textStyle="bold"
+                            app:layout_constraintTop_toBottomOf="@+id/input_name"
+                            tools:layout_editor_absoluteX="20dp" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/input_department"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:hint="Department:"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/input_reg_no"
+                            app:layout_constraintStart_toStartOf="@+id/input_reg_no"
+                            app:layout_constraintTop_toBottomOf="@+id/input_reg_no" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/input_email"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:hint="@string/reg_no"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/input_department"
+                            app:layout_constraintHorizontal_bias="0.119"
+                            app:layout_constraintStart_toStartOf="@+id/input_department"
+                            app:layout_constraintTop_toBottomOf="@+id/input_department" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/input_password"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:hint="@string/Password"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/input_email"
+                            app:layout_constraintHorizontal_bias="0.6"
+                            app:layout_constraintStart_toStartOf="@+id/input_email"
+                            app:layout_constraintTop_toBottomOf="@+id/input_email" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/input_confirm_password"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:hint="@string/c_password"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/input_password"
+                            app:layout_constraintHorizontal_bias="0.825"
+                            app:layout_constraintStart_toStartOf="@+id/input_password"
+                            app:layout_constraintTop_toBottomOf="@+id/input_password" />
+
+                        <TextView
+                            android:id="@+id/resend_link"
+                            android:layout_width="78dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/resend_link"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold|italic"
+                            app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+                            app:layout_constraintEnd_toEndOf="@+id/btn_register"
+                            app:layout_constraintHorizontal_bias="0.498"
+                            app:layout_constraintStart_toStartOf="@+id/btn_register"
+                            app:layout_constraintTop_toBottomOf="@+id/btn_register"
+                            app:layout_constraintVertical_bias="0.551" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="32dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/btn_register"
+                            app:layout_constraintHorizontal_bias="0.498"
+                            app:layout_constraintStart_toStartOf="@+id/btn_register"
+                            app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/mProfilePic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.463"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_account_circle_white_24dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/register"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/profilePic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.457"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </androidx.core.widget.NestedScrollView>
+
+
+
+

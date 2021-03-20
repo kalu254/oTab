@@ -24,7 +24,6 @@
     <string name="hint_email">Email:</string>
     <string name="hint_password">Password:</string>
     <string name="hint_confirm_password">Confirm Password:</string>
-    <string name="hint_account_statement">Only Students and Lecturers From Kheu Should Create Accounts</string>
     <string name="hint_addlessons_to_db">Add lesons,lecture rooms and course lecturers</string>
     <string name="text_register">Register</string>
     <string name="error_message_name">Enter Full Name</string>
@@ -86,6 +85,7 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="cancel">Cancel</string>
-    <string name="confirm">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="select_your_lessons_from_the_departments">Select your lessons from the Departments</string>
 
 </resources>

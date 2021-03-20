@@ -1,7 +1,6 @@
 package com.kalu.otab.ui.MyLessons;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +16,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.kalu.otab.DataManagement.Unit;
+import com.kalu.otab.model.Unit;
 import com.kalu.otab.R;
 
 import java.util.ArrayList;

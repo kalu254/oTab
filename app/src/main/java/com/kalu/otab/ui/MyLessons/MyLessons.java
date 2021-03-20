@@ -8,6 +8,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -19,18 +20,18 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.kalu.otab.DataManagement.Lesson;
+import com.kalu.otab.model.Lesson;
 import com.kalu.otab.R;
+import com.kalu.otab.ui.viewmodel.MyLessonsViewModel;
 
 import java.util.List;
 
 public class MyLessons extends Fragment {
 
-    public static final int NEW_LESSON_ACTIVITY_REQUEST_CODE = 1;
     private MyLessonsViewModel mMyLessonsViewModel;
+    private TextView noLessons;
 
     Context thisContext;
-    private Bundle bundle;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -47,6 +48,8 @@ public class MyLessons extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        noLessons = view.findViewById(R.id.tv_no_selected_lessons);
+
         RecyclerView lessonRecycler = view.findViewById(R.id.my_lessons);
         final MyLessonsRecyclerAdapter myLessonsRecyclerAdapter = new MyLessonsRecyclerAdapter(view.getContext());
         lessonRecycler.setAdapter(myLessonsRecyclerAdapter);
@@ -57,6 +60,9 @@ public class MyLessons extends Fragment {
             @Override
             public void onChanged(@Nullable final List<Lesson> lessons) {
                 // Update the cached copy of the words in the adapter.
+                if (lessons == null){
+                    noLessons.setVisibility(View.VISIBLE);
+                }
                 myLessonsRecyclerAdapter.setTheLessons(lessons);
             }
         });

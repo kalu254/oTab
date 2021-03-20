@@ -1,8 +1,7 @@
-package com.kalu.otab.DataManagement;
+package com.kalu.otab.ui.Admin;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -20,13 +19,13 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.kalu.otab.R;
+import com.kalu.otab.model.Unit;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 public class Insert extends AppCompatActivity {
     public static String mDepartment;

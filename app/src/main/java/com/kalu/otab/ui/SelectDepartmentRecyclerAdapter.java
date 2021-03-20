@@ -1,6 +1,5 @@
 package com.kalu.otab.ui;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
@@ -18,7 +17,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.kalu.otab.DataManagement.Insert;
+import com.kalu.otab.ui.Admin.Insert;
 import com.kalu.otab.R;
 import com.kalu.otab.ui.MyLessons.SelectLessonsActivity;
 

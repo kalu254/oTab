@@ -1,4 +1,4 @@
-package com.kalu.otab.ui.MyLessons;
+package com.kalu.otab.ui.viewmodel;
 
 import android.app.Application;
 
@@ -6,21 +6,21 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.kalu.otab.DataManagement.Lesson;
-import com.kalu.otab.DataManagement.LessonRepository;
+import com.kalu.otab.model.Lesson;
+import com.kalu.otab.repository.DetailsRepository;
 
 import java.util.List;
 
 public class MyLessonsViewModel extends AndroidViewModel {
 
-    private LessonRepository mLessonRepository;
+    private DetailsRepository mDetailsRepository;
     private LiveData<List<Lesson>> mAllLessons;
 
     public MyLessonsViewModel(@NonNull Application application) {
         super(application);
 
-        mLessonRepository = new LessonRepository(application);
-        mAllLessons = mLessonRepository.getAllLessons();
+        mDetailsRepository = new DetailsRepository(application);
+        mAllLessons = mDetailsRepository.getAllLessons();
 
     }
 
@@ -29,14 +29,14 @@ public class MyLessonsViewModel extends AndroidViewModel {
     }
 
     public void insert(Lesson lesson){
-        mLessonRepository.insert(lesson);
+        mDetailsRepository.insertLesson(lesson);
     }
 
     public void deleteAll() {
-        mLessonRepository.deleteAll();
+        mDetailsRepository.deleteAllLessons();
     }
 
     public void deleteLesson(Lesson l) {
-        mLessonRepository.deleteLesson(l);
+        mDetailsRepository.deleteLesson(l);
     }
 }

@@ -10,7 +10,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.kalu.otab.DataManagement.Lesson;
+import com.kalu.otab.model.Lesson;
 import com.kalu.otab.R;
 
 import java.util.List;

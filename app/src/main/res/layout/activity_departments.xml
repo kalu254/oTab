@@ -5,7 +5,7 @@
     android:background="@color/colorBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DataManagement.Departments">
+    tools:context=".ui.Departments">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/departments"
