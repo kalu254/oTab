@@ -1,4 +1,4 @@
-# ktab - My final year school project, an realtime timetable for keeping a record of units taken and any updates
+# ktab - My final year school project, a realtime timetable for keeping a record of units taken and any updates
 #
 Firebase Authentication
 -sign up
